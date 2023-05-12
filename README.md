@@ -25,5 +25,10 @@ Ready-made IDE based on [helix-editor](https://helix-editor.com/)
 
 ## Installaton 
 ```bash
-
+cd /opt
+wget https://github.com/Devil666face/helix-ide/releases/download/v05.12/helix-ide.tar.gz
+tar -xf helix-ide.tar.gz
+rm helix-ide.tar.gz
+cd helix-23.03
+./init.sh
 ```
