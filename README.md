@@ -33,3 +33,6 @@ rm helix-ide.tar.gz
 cd helix-23.03
 ./init.sh
 ```
+### TODO
+1. [ ] [Add stubs for django](https://github.com/typeddjango/django-stubs)
+2. [ ] [Add another stubs](https://github.com/typeddjango/awesome-python-typing)
