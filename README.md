@@ -1,2 +1,29 @@
 # helix-ide
-Ready-made ide based on helix-editor
+Ready-made IDE based on [helix-editor](https://helix-editor.com/)
+
+## Requirements
+1. Glibc >= 2.28
+2. x86_64
+
+## Supproted [languages](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers)
+1. bash
+2. css
+3. dockerfile
+4. html
+5. javascript
+6. json
+7. jsx
+8. markdown
+9. python
+10. scss
+11. tsx
+12. typescript
+13. yaml
+
+## Additions
+1. [Lazygit](https://github.com/jesseduffield/lazygit)
+
+## Installaton 
+```bash
+
+```
