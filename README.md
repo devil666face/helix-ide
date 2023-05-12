@@ -2,8 +2,9 @@
 Ready-made IDE based on [helix-editor](https://helix-editor.com/)
 
 ## Requirements
-1. Glibc >= 2.28
-2. x86_64
+1. [Glibc >= 2.28](https://github.com/Devil666face/helix-editor-for-custom-glib)
+  _Default helix support only glibc>=2.29 use this project for build custom binary file_
+3. x86_64
 
 ## Supproted [languages](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers)
 1. bash
