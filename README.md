@@ -34,5 +34,6 @@ cd helix-23.03
 ./init.sh
 ```
 ### TODO
-1. [ ] [Add stubs for django](https://github.com/typeddjango/django-stubs)
-2. [ ] [Add another stubs](https://github.com/typeddjango/awesome-python-typing)
+1. [ ] [~~Add stubs for django~~](https://github.com/typeddjango/django-stubs)
+2. [ ] [Add stubs for django](https://pypi.org/project/django-types/)
+3. [ ] [Add another stubs](https://github.com/typeddjango/awesome-python-typing)
