@@ -35,5 +35,5 @@ cd helix-23.03
 ```
 ### TODO
 1. [ ] [~~Add stubs for django~~](https://github.com/typeddjango/django-stubs)
-2. [ ] [Add stubs for django](https://pypi.org/project/django-types/)
+2. [x] [Add stubs for django](https://pypi.org/project/django-types/)
 3. [ ] [Add another stubs](https://github.com/typeddjango/awesome-python-typing)
