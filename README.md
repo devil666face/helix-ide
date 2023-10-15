@@ -43,3 +43,12 @@ cp -r /opt/helix-23.03/python/lib/python3.10/site-packages/django-stubs/* /opt/h
 ### TODO
 1. [x] [Add stubs for django](https://pypi.org/project/django-types/)
 2. [ ] [Add another stubs](https://github.com/typeddjango/awesome-python-typing)
+
+---
+Use this for add modules
+```bash
+npm install -g package
+```
+```
+/opt/helix/python/bin/pip3.10 install package
+```
