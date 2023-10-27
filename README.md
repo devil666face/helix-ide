@@ -45,7 +45,7 @@ Ready-made IDE based on [helix-editor](https://helix-editor.com/)
 ## Installaton
 
 ```bash
-bash -c "$(wget https://raw.githubusercontent.com/Devil666face/helix-ide/main/install.sh -O -)"
+sudo bash -c "$(wget https://raw.githubusercontent.com/Devil666face/helix-ide/main/install.sh -O -)"
 ```
 
 ### Add new stubs for pyright

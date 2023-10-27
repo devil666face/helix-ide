@@ -1,10 +1,9 @@
 #!/bin/bash
-NON_ROOT_USER=$USER
+read -p "Enter your main user " NON_ROOT_USER
 cd /opt
-sudo wget https://github.com/Devil666face/helix-ide/releases/latest
-sudo rm -rf helix && sudo tar -xf helix-ide.tgz && sudo rm -rf helix-ide.tgz
-sudo chown -R $NON_ROOT_USER:$NON_ROOT_USER ./helix
+wget https://github.com/Devil666face/helix-ide/releases/latest
+rm -rf helix && tar -xf helix-ide.tgz && rm -rf helix-ide.tgz
+chown -R $NON_ROOT_USER:$NON_ROOT_USER ./helix
 cd helix
-sudo chmod +x init.sh
-sudo ./init.sh
 ./init.sh
+sudo -u $NON_ROOT_USER ./init.sh
