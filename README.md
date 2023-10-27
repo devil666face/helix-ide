@@ -1,37 +1,59 @@
 # helix-ide
+
 Ready-made IDE based on [helix-editor](https://helix-editor.com/)
 
 ## Requirements
-1. [Glibc >= 2.28](https://github.com/Devil666face/helix-editor-for-custom-glib)
-  _Default helix support only glibc>=2.29 use this project for build custom binary file_
-3. x86_64
 
-## Supproted [languages](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers)
-1. bash
-2. css
-3. dockerfile
-4. html
-5. javascript
-6. json
-7. jsx
-8. markdown
-9. python
-10. scss
-11. tsx
-12. typescript
-13. yaml
+1. [Glibc >= 2.28](https://github.com/Devil666face/helix-editor-for-custom-glib)
+   _Default helix support only glibc>=2.29 use this project for build custom binary file_
+2. x86_64
+
+## Supported [languages](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers)
+
+1. [Golang](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#go):
+
+   1. [goimports](https://pkg.go.dev/golang.org/x/tools/cmd/goimports)
+   2. [gopls](https://pkg.go.dev/golang.org/x/tools/gopls)
+   3. [dlv](https://github.com/go-delve/delve)
+   4. [air](https://github.com/cosmtrek/air)
+   5. [golangci-lint](https://github.com/golangci/golangci-lint)
+   6. [templ](https://github.com/a-h/templ)
+
+2. [Python](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#python---pyright--ruff--black):
+
+   1. [pyright](https://github.com/microsoft/pyright)
+   2. [ruff-lsp](https://github.com/astral-sh/ruff-lsp)
+   3. [black](https://github.com/psf/black)
+
+3. [Bash](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#bash)
+4. [Dockerfile](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#docker)
+5. [Html](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#html) [Javascript Json Jsx](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#javascript) [Css](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#css) [Scss](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#scss)
+6. [Markdown](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#marksman)
+   1. [marksman](https://github.com/artempyanykh/marksman)
+   2. [prettier](https://prettier.io/)
+7. [Typescript](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#typescript)
+8. [Yaml](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#yaml)
+   1. [Ansible](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#ansible)
+   2. [prettier](https://prettier.io/)
+9. [Toml](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#toml)
+   1. [taplo](https://github.com/tamasfe/taplo/releases)
 
 ## Additions
+
 1. [Lazygit](https://github.com/jesseduffield/lazygit)
 
-## Installaton 
+## Installaton
+
 ```bash
-cd /opt && sudo wget https://github.com/Devil666face/helix-ide/releases/download/v05.12/helix-ide.tar.gz && sudo tar -xf helix-ide.tar.gz && sudo rm helix-ide.tar.gz
+cd /opt && sudo wget https://github.com/Devil666face/helix-ide/releases/latest && sudo tar -xf helix-ide.tar.gz && sudo rm helix-ide.tar.gz
 sudo chown -R `YOUR_MAIN_USER`:`YOUR_MAIN_USER` helix-23.03 && cd helix-23.03
 ./init.sh
 ```
+
 ### Add new stubs for pyright
+
 Example for [django-types](https://pypi.org/project/django-types/)
+
 ```
 /opt/helix-23.03/python/bin/python3.10 -m pip install django-types
 mkdir -p /opt/helix-23.03/node/lib/node_modules/pyright/dist/typeshed-fallback/stubs/django/django
@@ -40,15 +62,14 @@ echo "version = \"*\"" >> /opt/helix-23.03/node/lib/node_modules/pyright/dist/ty
 cp -r /opt/helix-23.03/python/lib/python3.10/site-packages/django-stubs/* /opt/helix-23.03/node/lib/node_modules/pyright/dist/typeshed-fallback/stubs/django/django
 ```
 
-### TODO
-1. [x] [Add stubs for django](https://pypi.org/project/django-types/)
-2. [ ] [Add another stubs](https://github.com/typeddjango/awesome-python-typing)
-
 ---
+
 Use this for add modules
+
 ```bash
 npm install -g package
 ```
+
 ```
 /opt/helix/python/bin/pip3.10 install package
 ```
