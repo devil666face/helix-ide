@@ -41,6 +41,8 @@ Ready-made IDE based on [helix-editor](https://helix-editor.com/)
 ## Additions
 
 1. [Lazygit](https://github.com/jesseduffield/lazygit)
+2. [Lazydocker](https://github.com/jesseduffield/lazydocker)
+3. [Dive](https://github.com/wagoodman/dive)
 
 ## Installaton
 
