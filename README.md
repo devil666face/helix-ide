@@ -34,8 +34,14 @@ Ready-made IDE based on [helix-editor](https://helix-editor.com/)
 7. [Typescript](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#typescript)
 8. [Yaml](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#yaml)
    1. [Ansible](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#ansible)
-   2. [prettier](https://prettier.io/)
-9. [Toml](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#toml)
+
+```
+npm install -g @ansible/ansible-language-server
+apt-get install ansible-lint ansible
+```
+
+2. [prettier](https://prettier.io/)
+3. [Toml](https://github.com/helix-editor/helix/wiki/How-to-install-the-default-language-servers#toml)
    1. [taplo](https://github.com/tamasfe/taplo/releases)
 
 ## Additions
